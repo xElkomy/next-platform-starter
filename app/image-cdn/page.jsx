@@ -19,36 +19,18 @@ const sampleImageSrcSet = [640, 1280, 2048]
     .join(', ');
 
 const nextImageSnippet = `
-When running on Netlify, \`next/image\` is automatically set-up to use Netlify Image CDN for optimized images.
+This is just a Proof of concept from bugswagger.com about knowing this site is vulnerable to subdomain takeover and bugswagger team take it to make a poc to you.
 
-~~~jsx
-import Image from 'next/image';
-
-// In your component
-<Image src="/images/corgi.jpg" alt="Corgi" /* ... additional props */ />
-~~~
 `;
 
 const originalVsCdnSnippet = `
-In the code below, a regular \`<img>\` tag is used in both cases for a framework-agnostic example. 
-Other than using \`next/image\` or rolling your own \`<img>\` tags, you can also use the excellent [unpic-img](https://unpic.pics/).
+This is just a Proof of concept from bugswagger.com about knowing this site is vulnerable to subdomain takeover and bugswagger team take it to make a poc to you.
 
-~~~jsx
-// <== On the left, the original image
-<img src="/images/corgi.jpg" alt="Corgi" />
-
-// ==> On the right, explicitly using Netlify Image CDN endpoint for a responsive image
-<img 
-  srcSet="/.netlify/images?url=images/corgi.jpg&w=640 640w, /.netlify/images?url=images/corgi.jpg&w=1280 1280w, /.netlify/images?url=images/corgi.jpg&w=2048 2048w"
-  sizes="(max-width: 1024px) 100vw, 1024px" 
-  alt="Corgi" 
-/>
-~~~
 `;
 
 const devModeWarning = `
-In local development, optimization is performed locally without automatic format
-detection, so format is set to WebP.
+This is just a Proof of concept from bugswagger.com about knowing this site is vulnerable to subdomain takeover and bugswagger team take it to make a poc to you.
+
 `;
 
 export default function Page() {
